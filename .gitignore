@@ -1,0 +1,24 @@
+# secrets
+.env
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# virtual environment
+venv/
+env/
+
+# docker
+*.log
+
+# database
+*.db
+*.sqlite3
+
+# VS Code
+.vscode/

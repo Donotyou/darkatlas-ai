@@ -1,0 +1,31 @@
+{
+  "assets": [
+    {"id": "a1", "type": "domain", "value": "example.com", "status": "active", "source": "scan", "tags": ["root"], "metadata": {}},
+    {"id": "a2", "type": "domain", "value": "test-corp.io", "status": "active", "source": "scan", "tags": ["root"], "metadata": {}},
+    {"id": "a3", "type": "subdomain", "value": "api.example.com", "status": "active", "source": "scan", "tags": ["prod", "api"], "metadata": {}},
+    {"id": "a4", "type": "subdomain", "value": "staging.example.com", "status": "stale", "source": "scan", "tags": ["staging"], "metadata": {}},
+    {"id": "a5", "type": "subdomain", "value": "dev.example.com", "status": "active", "source": "manual", "tags": ["dev"], "metadata": {}},
+    {"id": "a6", "type": "subdomain", "value": "admin.example.com", "status": "active", "source": "scan", "tags": ["prod", "sensitive"], "metadata": {}},
+    {"id": "a7", "type": "subdomain", "value": "mail.example.com", "status": "active", "source": "scan", "tags": ["prod"], "metadata": {}},
+    {"id": "a8", "type": "subdomain", "value": "vpn.test-corp.io", "status": "active", "source": "scan", "tags": ["prod", "sensitive"], "metadata": {}},
+    {"id": "a9", "type": "ip_address", "value": "203.0.113.10", "status": "active", "source": "scan", "tags": ["prod"], "metadata": {"asn": "AS12345", "country": "US"}},
+    {"id": "a10", "type": "ip_address", "value": "203.0.113.11", "status": "active", "source": "scan", "tags": ["prod"], "metadata": {"asn": "AS12345", "country": "US"}},
+    {"id": "a11", "type": "ip_address", "value": "10.0.0.5", "status": "stale", "source": "scan", "tags": ["internal"], "metadata": {}},
+    {"id": "a12", "type": "service", "value": "443/tcp", "status": "active", "source": "scan", "tags": ["prod"], "metadata": {"banner": "nginx/1.18.0", "ip": "203.0.113.10"}},
+    {"id": "a13", "type": "service", "value": "22/tcp", "status": "active", "source": "scan", "tags": ["prod", "sensitive"], "metadata": {"banner": "OpenSSH 7.4p1", "ip": "203.0.113.10"}},
+    {"id": "a14", "type": "service", "value": "80/tcp", "status": "active", "source": "scan", "tags": ["prod"], "metadata": {"banner": "Apache/2.4.6", "ip": "203.0.113.11"}},
+    {"id": "a15", "type": "service", "value": "3306/tcp", "status": "active", "source": "scan", "tags": ["prod", "critical"], "metadata": {"banner": "MySQL 5.7.32", "ip": "203.0.113.11"}},
+    {"id": "a16", "type": "service", "value": "8080/tcp", "status": "stale", "source": "scan", "tags": ["dev"], "metadata": {"banner": "Jetty 9.4", "ip": "10.0.0.5"}},
+    {"id": "a17", "type": "certificate", "value": "CN=api.example.com", "status": "active", "source": "scan", "tags": [], "metadata": {"issuer": "Let's Encrypt", "expires": "2024-01-02", "serial": "abc123"}},
+    {"id": "a18", "type": "certificate", "value": "CN=example.com", "status": "active", "source": "scan", "tags": [], "metadata": {"issuer": "DigiCert", "expires": "2026-08-15", "serial": "def456"}},
+    {"id": "a19", "type": "certificate", "value": "CN=staging.example.com", "status": "active", "source": "scan", "tags": [], "metadata": {"issuer": "Let's Encrypt", "expires": "2025-03-10", "serial": "ghi789"}},
+    {"id": "a20", "type": "certificate", "value": "CN=admin.example.com", "status": "active", "source": "scan", "tags": [], "metadata": {"issuer": "Let's Encrypt", "expires": "2026-07-05", "serial": "jkl012"}},
+    {"id": "a21", "type": "certificate", "value": "CN=vpn.test-corp.io", "status": "active", "source": "scan", "tags": [], "metadata": {"issuer": "Sectigo", "expires": "2024-06-01", "serial": "mno345"}},
+    {"id": "a22", "type": "technology", "value": "nginx", "status": "active", "source": "scan", "tags": ["prod"], "metadata": {"version": "1.18.0", "cve": "CVE-2021-23017"}},
+    {"id": "a23", "type": "technology", "value": "Apache HTTP Server", "status": "active", "source": "scan", "tags": ["prod"], "metadata": {"version": "2.4.6", "cve": "CVE-2021-41773"}},
+    {"id": "a24", "type": "technology", "value": "OpenSSH", "status": "active", "source": "scan", "tags": ["prod"], "metadata": {"version": "7.4", "eol": "true"}},
+    {"id": "a25", "type": "technology", "value": "MySQL", "status": "active", "source": "scan", "tags": ["prod", "critical"], "metadata": {"version": "5.7.32", "eol": "true"}},
+    {"id": "a26", "type": "subdomain", "value": "", "status": "active", "source": "scan", "tags": [], "metadata": {}},
+    {"id": "a27", "type": "service", "value": "443/tcp", "status": "active", "source": "scan", "tags": ["prod"], "metadata": {"banner": "nginx/1.18.0", "ip": "203.0.113.10"}}
+  ]
+}
