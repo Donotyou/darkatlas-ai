@@ -32,7 +32,7 @@ def run(question: str, db: Session):
     if not question or len(question.strip()) < 3:
         return {"error": "Question is too short or empty"}
 
-    # جيبي كل الداتا من الداتابيز
+    
     all_assets = db.query(Asset).all()
     if not all_assets:
         return {"error": "No assets found in database"}
